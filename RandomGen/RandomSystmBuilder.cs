@@ -1,16 +1,15 @@
 using System.Collections.Generic;
-using System.Linq;
 using RandomGen.Filters;
 using RandomGen.Providers;
 
 namespace RandomGen
 {
-    public interface IRandomProviderBuilder:IRandomSystemBuilder
+    public interface IRandomProviderBuilder : IRandomSystemBuilder
     {
         public IRandomFilterBuilder AddProvider(IRandomProvider provider);
     }
 
-    public interface IRandomFilterBuilder:IRandomSystemBuilder
+    public interface IRandomFilterBuilder : IRandomSystemBuilder
     {
         IRandomFilterBuilder AddFilter(IRandomFilter provider);
     }
@@ -25,7 +24,7 @@ namespace RandomGen
         double NextValue();
     }
 
-    public class RandomSystmBuilder : IRandomProviderBuilder,IRandomFilterBuilder,  IRandomSystem
+    public class RandomSystmBuilder : IRandomProviderBuilder, IRandomFilterBuilder, IRandomSystem
     {
         private IRandomProvider _provider;
         private readonly List<IRandomFilter> _filters;
@@ -59,6 +58,7 @@ namespace RandomGen
             {
                 result = filter.FilterValue(result);
             }
+
             return result;
         }
     }
