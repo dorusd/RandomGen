@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IAt2R0vXcGOgz6ECE0+H3UP0C4A5jKiklavzj2x0b7QR5ztmw/6nrCCbquAIQjhXjWlWScGV+A5p338XdpDvGA==",
+  "success": true,
+  "projectFilePath": "/home/dorus/RiderProjects/RandomGen/RandomGen/RandomGen.csproj",
+  "expectedPackageFiles": [
+    "/home/dorus/.nuget/packages/troschuetz.random/5.0.1/troschuetz.random.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

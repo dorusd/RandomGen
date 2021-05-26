@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RandomGen/1.0.0": {
+        "dependencies": {
+          "Troschuetz.Random": "5.0.1"
+        },
+        "runtime": {
+          "RandomGen.dll": {}
+        }
+      },
+      "Troschuetz.Random/5.0.1": {
+        "runtime": {
+          "lib/netstandard2.1/Troschuetz.Random.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RandomGen/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Troschuetz.Random/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o23z0g0qxk0DzuUu7PovULOsVHphjVXxVyrhedFTUH9ikzD4IJswz/ZSxzhNk652d0aMFocCgwIFu24cp+SM6w==",
+      "path": "troschuetz.random/5.0.1",
+      "hashPath": "troschuetz.random.5.0.1.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGen", "RandomGen\RandomGen.csproj", "{FC569948-5BF7-4F38-B5D0-719F959352B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shower", "Shower\Shower.csproj", "{F24E6076-2BA4-48A3-9759-542BD581DB37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC569948-5BF7-4F38-B5D0-719F959352B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC569948-5BF7-4F38-B5D0-719F959352B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC569948-5BF7-4F38-B5D0-719F959352B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC569948-5BF7-4F38-B5D0-719F959352B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24E6076-2BA4-48A3-9759-542BD581DB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24E6076-2BA4-48A3-9759-542BD581DB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24E6076-2BA4-48A3-9759-542BD581DB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24E6076-2BA4-48A3-9759-542BD581DB37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
