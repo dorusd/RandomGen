@@ -1,10 +1,10 @@
 namespace RandomGen.Filters
 {
-    public class BrownienFilter:IRandomFilter
+    public class BrownianFilter : IRandomFilter
     {
         private readonly IRandomState _state;
 
-        public BrownienFilter()
+        public BrownianFilter()
         {
             _state = new RandomState(1);
         }

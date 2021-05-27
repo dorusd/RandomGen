@@ -1,6 +1,6 @@
 namespace RandomGen.Filters
 {
-    public  interface IRandomFilter
+    public interface IRandomFilter
     {
         double FilterValue(double nextInput);
     }

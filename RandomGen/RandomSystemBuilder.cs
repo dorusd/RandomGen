@@ -24,12 +24,12 @@ namespace RandomGen
         double NextValue();
     }
 
-    public class RandomSystmBuilder : IRandomProviderBuilder, IRandomFilterBuilder, IRandomSystem
+    public class RandomSystemBuilder : IRandomProviderBuilder, IRandomFilterBuilder, IRandomSystem
     {
         private IRandomProvider _provider;
         private readonly List<IRandomFilter> _filters;
 
-        public RandomSystmBuilder()
+        public RandomSystemBuilder()
         {
             _filters = new List<IRandomFilter>();
         }
