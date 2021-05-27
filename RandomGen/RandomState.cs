@@ -18,7 +18,7 @@ namespace RandomGen
 
         public double GetLastValue()
         {
-            return GetLastValues(1).First();
+            return GetPreviousValues(1).First();
         }
 
 
@@ -28,7 +28,7 @@ namespace RandomGen
             _memory[_memoryPointer] = nextInput;
         }
 
-        public double[] GetLastValues(int amount)
+        public double[] GetPreviousValues(int amount)
         {
             if (amount > _memorySize)
             {

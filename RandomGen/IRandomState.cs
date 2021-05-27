@@ -4,6 +4,6 @@ namespace RandomGen
     {
         double GetLastValue();
         void SetNextValue(double nextInput);
-        double[] GetLastValues(int amount);
+        double[] GetPreviousValues(int amount);
     }
 }
