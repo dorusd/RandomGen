@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using RandomGen;
 using RandomGen.Filters;
 using RandomGen.Providers;
@@ -11,16 +12,19 @@ namespace Shower
         private static void Main(string[] args)
         {
             const int n = 50;
-            TRandom tRandom = new TRandom();
-            IRandomProvider provider = new MirrorProvider(new LinearProvider(tRandom, -10, 10), 3);
-            IRandomProviderBuilder builderRaw = new RandomSystemBuilder();
-            IRandomProviderBuilder builderBrownian = new RandomSystemBuilder();
-            IRandomProviderBuilder builderAverage = new RandomSystemBuilder();
-            IRandomSystem systemRaw = builderRaw.AddProvider(provider).Build();
-            IRandomSystem systemBrownian = builderBrownian.AddProvider(provider).AddFilter(new BrownianFilter()).Build();
-            IRandomSystem systemBrownianAverage = builderAverage.AddProvider(provider)
-                .AddFilter(new BrownianFilter())
-                .AddFilter(new SimpleMovingAverageFilter(3)).Build();
+
+            IRandomSystem systemRaw = new RandomSystem(new LinearProvider(new TRandom(0), -10, 10));
+            IRandomSystem systemBrownian = new RandomSystem(new LinearProvider(new TRandom(0), -10, 10),
+                new List<IRandomFilter>
+                {
+                    new BrownianFilter()
+                });
+            IRandomSystem systemBrownianAverage = new RandomSystem(new LinearProvider(new TRandom(0), -10, 10), 
+                new List<IRandomFilter>
+                {
+                    new BrownianFilter(),
+                    new SimpleMovingAverageFilter(3)
+                });
 
             for (int i = 0; i < n; i++)
             {
