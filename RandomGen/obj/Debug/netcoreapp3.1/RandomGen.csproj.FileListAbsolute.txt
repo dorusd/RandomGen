@@ -1,9 +1,0 @@
-/home/dorus/RiderProjects/RandomGen/RandomGen/bin/Debug/netcoreapp3.1/RandomGen.deps.json
-/home/dorus/RiderProjects/RandomGen/RandomGen/bin/Debug/netcoreapp3.1/RandomGen.dll
-/home/dorus/RiderProjects/RandomGen/RandomGen/bin/Debug/netcoreapp3.1/RandomGen.pdb
-/home/dorus/RiderProjects/RandomGen/RandomGen/obj/Debug/netcoreapp3.1/RandomGen.csprojAssemblyReference.cache
-/home/dorus/RiderProjects/RandomGen/RandomGen/obj/Debug/netcoreapp3.1/RandomGen.AssemblyInfoInputs.cache
-/home/dorus/RiderProjects/RandomGen/RandomGen/obj/Debug/netcoreapp3.1/RandomGen.AssemblyInfo.cs
-/home/dorus/RiderProjects/RandomGen/RandomGen/obj/Debug/netcoreapp3.1/RandomGen.csproj.CoreCompileInputs.cache
-/home/dorus/RiderProjects/RandomGen/RandomGen/obj/Debug/netcoreapp3.1/RandomGen.dll
-/home/dorus/RiderProjects/RandomGen/RandomGen/obj/Debug/netcoreapp3.1/RandomGen.pdb
