@@ -21,10 +21,9 @@ namespace RandomGen
             return GetPreviousValues(1).First();
         }
 
-
         public void SetNextValue(double nextInput)
         {
-            _memoryPointer = (_memoryPointer) % _memorySize;
+            _memoryPointer %= _memorySize;
             _memory[_memoryPointer] = nextInput;
         }
 

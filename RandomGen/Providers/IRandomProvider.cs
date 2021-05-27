@@ -5,30 +5,30 @@ namespace RandomGen.Providers
         double GetNextDouble();
     }
 
-    public class MirorProvider : IRandomProvider
+    public class MirrorProvider : IRandomProvider
     {
         private readonly IRandomProvider _provider;
         private readonly int _copies;
-        private int counter;
-        private double valueToGive;
+        private int _counter;
+        private double _valueToGive;
 
-        public MirorProvider(IRandomProvider provider, int copies)
+        public MirrorProvider(IRandomProvider provider, int copies)
         {
             _provider = provider;
             _copies = copies;
-            counter = 0;
+            _counter = 0;
         }
 
         public double GetNextDouble()
         {
-            if (counter == 0)
+            if (_counter == 0)
             {
-                counter = _copies;
-                valueToGive = _provider.GetNextDouble();
+                _counter = _copies;
+                _valueToGive = _provider.GetNextDouble();
             }
 
-            counter--;
-            return valueToGive;
+            _counter--;
+            return _valueToGive;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿
-using Troschuetz.Random;
+﻿using Troschuetz.Random;
 
 namespace RandomGen.Providers
 {
