@@ -6,7 +6,7 @@ namespace RandomGen
 {
     public interface IRandomProviderBuilder : IRandomSystemBuilder
     {
-        public IRandomFilterBuilder AddProvider(IRandomProvider provider);
+        IRandomFilterBuilder AddProvider(IRandomProvider provider);
     }
 
     public interface IRandomFilterBuilder : IRandomSystemBuilder

@@ -16,7 +16,7 @@ namespace RandomGen.Filters
         public double FilterValue(double nextInput)
         {
             _state.SetNextValue(nextInput);
-            double nextValue = _state.GetLastValues(_averageSize).Average();
+            double nextValue = _state.GetPreviousValues(_averageSize).Average();
             return nextValue;
         }
     }
