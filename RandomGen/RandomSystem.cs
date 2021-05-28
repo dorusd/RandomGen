@@ -12,10 +12,10 @@ namespace RandomGen
 
         private RandomSystem() {}
 
-        public RandomSystem(IRandomProvider provider, IEnumerable<IRandomFilter> filters = null)
+        public RandomSystem(IRandomProvider provider, params IRandomFilter[] filters)
         {
             _provider = provider ?? throw new ArgumentNullException(nameof(provider));
-            _filters = filters != null ? new List<IRandomFilter>(filters) : new List<IRandomFilter>();
+            _filters = filters;
         }
 
         public double NextValue()
