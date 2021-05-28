@@ -8,12 +8,14 @@ namespace RandomGen
     public class RandomSystem : IRandomSystem
     {
         private readonly IRandomProvider _provider;
-        private readonly List<IRandomFilter> _filters;
+        private readonly IEnumerable<IRandomFilter> _filters;
 
-        public RandomSystem(IRandomProvider provider, List<IRandomFilter> filters = null)
+        private RandomSystem() {}
+
+        public RandomSystem(IRandomProvider provider, IEnumerable<IRandomFilter> filters = null)
         {
             _provider = provider ?? throw new ArgumentNullException(nameof(provider));
-            _filters = filters ?? new List<IRandomFilter>();
+            _filters = filters != null ? new List<IRandomFilter>(filters) : new List<IRandomFilter>();
         }
 
         public double NextValue()
